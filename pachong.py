@@ -1,3 +1,4 @@
+# 爬取猫眼电影排名前50的电影，根据知乎专栏学习python的正确姿势改编代码
 import requests
 from bs4 import BeautifulSoup
 import xlwt
