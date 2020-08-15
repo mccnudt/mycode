@@ -51,5 +51,10 @@ allnews = pd.DataFrame({'内容': newscontent, '标题': newsname, '网址': new
 cols = ['标题', '内容', '网址']
 allnews = allnews.ix[:, cols]
 fname = 'C:/Users/mccnudt/Desktop/新闻/' + \
-    time.strftime('%Y-%m-%d', time.localtime()) + ' 新闻.xlsx'
-allnews.to_excel(fname)
+    time.strftime('%Y-%m-%d', time.localtime()) + ' 凤凰网新闻.xlsx'
+writer = pd.ExcelWriter(fname)
+allnews.to_excel(writer, sheet_name='凤凰网')
+writer.save()
+writer.close()
+
+print('Done!')
