@@ -38,7 +38,7 @@ if __name__ == '__main__':
 
         NEWcontent = gethtml(new_url)
         soup = BeautifulSoup(NEWcontent, "lxml")
-        neirong = soup.find_all(class_="text-3zQ3cZD4")
+        neirong = soup.find_all(class_="text-3w2e3DBc")
         pattern = re.compile(r'<.*?>')
         neirong = pattern.sub("", str(neirong))
         neirong = neirong.lstrip('[')
