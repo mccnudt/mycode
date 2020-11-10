@@ -132,6 +132,6 @@ def yang(n):
         return lis
 
 
-yang(10)
+yang(5)
 
 # %%
